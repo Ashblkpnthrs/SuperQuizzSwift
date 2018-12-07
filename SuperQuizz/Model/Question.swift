@@ -15,7 +15,7 @@ class Question {
     var correctAnswer : String = ""
     var userChoice : String?
     var propositions = [String]()
-    
+    var questionId : Int = 0
     
     init(questionTitle : String , correctAnswer : String) {
         self.questionTitle = questionTitle

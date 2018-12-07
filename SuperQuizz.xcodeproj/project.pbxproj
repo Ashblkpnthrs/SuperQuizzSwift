@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0CA4F621B9373A00B2DB8A /* API CLIENT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CA4F521B9373A00B2DB8A /* API CLIENT.swift */; };
+		BC13AB0121B7CF3D006733D9 /* CreateOrEditQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AB0021B7CF3D006733D9 /* CreateOrEditQuestionViewController.swift */; };
 		BC393E1821B6B60B0016DC12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC393E1721B6B60B0016DC12 /* AppDelegate.swift */; };
 		BC393E1A21B6B60B0016DC12 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC393E1921B6B60B0016DC12 /* AnswerViewController.swift */; };
 		BC393E1D21B6B60B0016DC12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC393E1B21B6B60B0016DC12 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC0CA4F521B9373A00B2DB8A /* API CLIENT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API CLIENT.swift"; sourceTree = "<group>"; };
+		BC13AB0021B7CF3D006733D9 /* CreateOrEditQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrEditQuestionViewController.swift; sourceTree = "<group>"; };
 		BC393E1421B6B60B0016DC12 /* SuperQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC393E1721B6B60B0016DC12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC393E1921B6B60B0016DC12 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC13AB0221B7CF51006733D9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BC13AB0621B7CF7E006733D9 /* IB */,
+				BC13AB0521B7CF78006733D9 /* Cells */,
+				BC13AB0321B7CF5A006733D9 /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BC13AB0321B7CF5A006733D9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BC393E1921B6B60B0016DC12 /* AnswerViewController.swift */,
+				BC13AB0021B7CF3D006733D9 /* CreateOrEditQuestionViewController.swift */,
+				BCF8788521B6F10A00ADD440 /* CorrectorFalseAnswerViewController.swift */,
+				BC393E4521B6B7690016DC12 /* QuestionsTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BC13AB0521B7CF78006733D9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BC393E4721B6C0F50016DC12 /* QuestionTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BC13AB0621B7CF7E006733D9 /* IB */ = {
+			isa = PBXGroup;
+			children = (
+				BC393E1B21B6B60B0016DC12 /* Main.storyboard */,
+				BC393E2021B6B60D0016DC12 /* LaunchScreen.storyboard */,
+				BC393E4821B6C0F50016DC12 /* QuestionTableViewCell.xib */,
+			);
+			path = IB;
+			sourceTree = "<group>";
+		};
+		BC13AB0721B7CFB6006733D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC84260E21B6C5B3001DC321 /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BC393E0B21B6B60B0016DC12 = {
 			isa = PBXGroup;
 			children = (
@@ -108,15 +159,10 @@
 			isa = PBXGroup;
 			children = (
 				BC393E1721B6B60B0016DC12 /* AppDelegate.swift */,
-				BC393E1921B6B60B0016DC12 /* AnswerViewController.swift */,
-				BC393E4521B6B7690016DC12 /* QuestionsTableViewController.swift */,
-				BC393E4721B6C0F50016DC12 /* QuestionTableViewCell.swift */,
-				BC393E4821B6C0F50016DC12 /* QuestionTableViewCell.xib */,
-				BC84260E21B6C5B3001DC321 /* Question.swift */,
-				BC393E1B21B6B60B0016DC12 /* Main.storyboard */,
-				BCF8788521B6F10A00ADD440 /* CorrectorFalseAnswerViewController.swift */,
+				BC0CA4F521B9373A00B2DB8A /* API CLIENT.swift */,
+				BC13AB0721B7CFB6006733D9 /* Model */,
+				BC13AB0221B7CF51006733D9 /* UI */,
 				BC393E1E21B6B60D0016DC12 /* Assets.xcassets */,
-				BC393E2021B6B60D0016DC12 /* LaunchScreen.storyboard */,
 				BC393E2321B6B60D0016DC12 /* Info.plist */,
 			);
 			path = SuperQuizz;
@@ -272,9 +318,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC13AB0121B7CF3D006733D9 /* CreateOrEditQuestionViewController.swift in Sources */,
 				BC84260F21B6C5B3001DC321 /* Question.swift in Sources */,
 				BC393E4921B6C0F50016DC12 /* QuestionTableViewCell.swift in Sources */,
 				BCF8788621B6F10A00ADD440 /* CorrectorFalseAnswerViewController.swift in Sources */,
+				BC0CA4F621B9373A00B2DB8A /* API CLIENT.swift in Sources */,
 				BC393E1A21B6B60B0016DC12 /* AnswerViewController.swift in Sources */,
 				BC393E4621B6B7690016DC12 /* QuestionsTableViewController.swift in Sources */,
 				BC393E1821B6B60B0016DC12 /* AppDelegate.swift in Sources */,

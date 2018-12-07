@@ -13,6 +13,7 @@ class CorrectorFalseAnswerViewController: UIViewController {
     var question : Question?
 
     @IBOutlet weak var correctAnswerTitleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let question = question else {
@@ -21,7 +22,6 @@ class CorrectorFalseAnswerViewController: UIViewController {
         guard let userAnswer = question.userChoice else {
             return
         }
-        
         if question.isCorrectAnswer (answer : userAnswer) {
             correctAnswerTitleLabel.text = "Correct Answer"
         } else {
