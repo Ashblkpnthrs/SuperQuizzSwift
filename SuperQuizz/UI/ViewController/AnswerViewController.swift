@@ -25,7 +25,6 @@ class AnswerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         questionTitle.text = question?.questionTitle
         answerButton1.setTitle(question?.propositions[0], for: .normal)
@@ -33,7 +32,6 @@ class AnswerViewController: UIViewController {
         answerButton3.setTitle(question?.propositions[2], for: .normal)
         answerButton4.setTitle(question?.propositions[3], for: .normal)
         
-       
     }
     
     @IBAction func onAnswerButtonTap(_ sender: UIButton) {
@@ -49,11 +47,11 @@ class AnswerViewController: UIViewController {
         self.show(vc, sender: self)
         
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-            DispatchQueue.global(qos: .userInitiated).async {
+        
+        DispatchQueue.global(qos: .userInitiated).async {
             for i in 0...10 {
                 Thread.sleep(forTimeInterval:1)
                 DispatchQueue.main.async(execute:{
@@ -67,12 +65,5 @@ class AnswerViewController: UIViewController {
         onQuestionAnswered = closure
     }
     
-    
-    func userDidChooseAnswer(isCorretAnswer : Bool) {
-        //TODO / Faire animation de réussite ou d'échec
-        
-        self.dismiss(animated: true, completion: nil)
-        onQuestionAnswered?(question!,isCorretAnswer)
-    }
 }
 

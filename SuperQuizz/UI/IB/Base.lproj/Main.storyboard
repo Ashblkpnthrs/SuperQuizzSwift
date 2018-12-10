@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,14 +37,14 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pq2-Fr-rQL">
                                                 <rect key="frame" x="0.0" y="0.0" width="301" height="85"/>
-                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="ColorAnswerButton"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mxn-NS-Jbp">
                                                 <rect key="frame" x="0.0" y="90" width="301" height="85"/>
-                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.88840418779999997" green="0.78197679878404647" blue="0.17573005800458352" alpha="0.68161386989999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -57,12 +58,13 @@
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0e7-Rk-1t8">
                                                 <rect key="frame" x="0.0" y="270" width="301" height="85"/>
-                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.30429271792316204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
+                                        <color key="backgroundColor" red="1" green="0.57137769630000002" blue="0.51813914539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cL8-9d-Mck">
                                         <rect key="frame" x="306" y="0.0" width="49" height="355"/>
@@ -110,7 +112,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.57137769630000002" blue="0.51813914539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="iaw-yL-Of3" firstAttribute="trailing" secondItem="PvD-Wt-9yE" secondAttribute="trailing" constant="10" id="5Pf-mb-43S"/>
                             <constraint firstItem="T5U-Qg-mJ1" firstAttribute="leading" secondItem="iaw-yL-Of3" secondAttribute="leading" constant="10" id="Hs5-u7-nVR"/>
@@ -148,9 +151,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOb-3d-XJa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOb-3d-XJa">
                                 <rect key="frame" x="16" y="134" width="343" height="123"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -162,7 +166,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6O-2w-TxZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="179" height="179"/>
-                                                <color key="backgroundColor" red="0.0" green="1" blue="0.48187491129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="ColorAnswerButton"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="onAnswerButtonTap:" destination="oH2-bg-YUJ" eventType="touchUpInside" id="Xex-1D-bub"/>
@@ -170,20 +174,22 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnG-d3-GR4">
                                                 <rect key="frame" x="186" y="0.0" width="179" height="179"/>
-                                                <color key="backgroundColor" red="0.0" green="1" blue="0.49831159060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.83829531096931353" green="0.85882352941176465" blue="0.0" alpha="0.86400002241134644" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="onAnswerButtonTap:" destination="oH2-bg-YUJ" eventType="touchUpInside" id="Egk-mg-tig"/>
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" name="ColorAnswerButton"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="678-9r-ojQ">
                                         <rect key="frame" x="0.0" y="186" width="365" height="179"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE2-zU-9hH">
                                                 <rect key="frame" x="0.0" y="0.0" width="179" height="179"/>
-                                                <color key="backgroundColor" red="0.0" green="1" blue="0.49831159060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="onAnswerButtonTap:" destination="oH2-bg-YUJ" eventType="touchUpInside" id="g1x-6Q-qGf"/>
@@ -191,7 +197,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyK-TN-k2c">
                                                 <rect key="frame" x="186" y="0.0" width="179" height="179"/>
-                                                <color key="backgroundColor" red="0.0" green="1" blue="0.48187491129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.85882352941176465" green="0.0" blue="0.080147406189412199" alpha="0.86400002241134644" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="onAnswerButtonTap:" destination="oH2-bg-YUJ" eventType="touchUpInside" id="Pqo-1Y-tFU"/>
@@ -208,7 +214,8 @@
                                 <rect key="frame" x="16" y="88" width="343" height="2"/>
                             </progressView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.57137769630000002" blue="0.51813914539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="eAH-ay-wVF" firstAttribute="trailing" secondItem="5YG-aN-xBv" secondAttribute="trailing" constant="5" id="6dq-3o-8gi"/>
                             <constraint firstItem="cwY-5l-Yfj" firstAttribute="leading" secondItem="ysI-aQ-gKF" secondAttribute="leadingMargin" id="9hL-gS-ewS"/>
@@ -245,22 +252,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lms-ek-VaS">
-                                <rect key="frame" x="5" y="268" width="365" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="5" y="120" width="365" height="417.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD9-bX-oWc">
+                                <rect key="frame" x="10" y="547.5" width="355" height="99.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CD9-bX-oWc" secondAttribute="height" multiplier="107:30" id="Tzk-1z-z32"/>
+                                </constraints>
+                                <state key="normal" title="Correct Answer"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.57137769630000002" blue="0.51813914539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lms-ek-VaS" firstAttribute="top" secondItem="VUp-A5-uXM" secondAttribute="top" constant="248" id="6Zn-ZT-7ce"/>
+                            <constraint firstItem="lms-ek-VaS" firstAttribute="top" secondItem="VUp-A5-uXM" secondAttribute="top" constant="100" id="6Zn-ZT-7ce"/>
                             <constraint firstItem="lms-ek-VaS" firstAttribute="centerX" secondItem="VUp-A5-uXM" secondAttribute="centerX" id="CZl-rq-2or"/>
+                            <constraint firstItem="CD9-bX-oWc" firstAttribute="top" secondItem="lms-ek-VaS" secondAttribute="bottom" constant="10" id="F1D-zf-BHB"/>
+                            <constraint firstItem="CD9-bX-oWc" firstAttribute="leading" secondItem="VUp-A5-uXM" secondAttribute="leading" constant="10" id="Idy-2E-s8O"/>
                             <constraint firstItem="lms-ek-VaS" firstAttribute="leading" secondItem="VUp-A5-uXM" secondAttribute="leading" constant="5" id="buj-AG-GOj"/>
                             <constraint firstItem="VUp-A5-uXM" firstAttribute="trailing" secondItem="lms-ek-VaS" secondAttribute="trailing" constant="5" id="iAP-pM-Hzd"/>
+                            <constraint firstItem="VUp-A5-uXM" firstAttribute="bottom" secondItem="CD9-bX-oWc" secondAttribute="bottom" constant="20" id="p97-ul-Y6a"/>
+                            <constraint firstItem="VUp-A5-uXM" firstAttribute="trailing" secondItem="CD9-bX-oWc" secondAttribute="trailing" constant="10" id="zIR-hX-hWa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUp-A5-uXM"/>
                     </view>
                     <connections>
+                        <outlet property="correctAnswerIcons" destination="CD9-bX-oWc" id="ojm-qa-d7a"/>
                         <outlet property="correctAnswerTitleLabel" destination="lms-ek-VaS" id="TTc-sl-77N"/>
                     </connections>
                 </viewController>
@@ -268,7 +288,7 @@
             </objects>
             <point key="canvasLocation" x="1485.5999999999999" y="366.56671664167919"/>
         </scene>
-        <!--Root View Controller-->
+        <!--SuperQuizz-->
         <scene sceneID="lJv-mI-VVK">
             <objects>
                 <tableViewController id="azr-rf-wpQ" customClass="QuestionsTableViewController" customModule="SuperQuizz" customModuleProvider="target" sceneMemberID="viewController">
@@ -276,6 +296,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" name="ColorNavigationQuestionListBackground"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="due-VF-S8r">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -284,6 +306,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -291,7 +315,7 @@
                             <outlet property="delegate" destination="azr-rf-wpQ" id="6YB-cD-SZi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="QyF-ql-7Lh">
+                    <navigationItem key="navigationItem" title="SuperQuizz" id="QyF-ql-7Lh">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="BFt-aF-SiA">
                             <connections>
                                 <segue destination="KwX-Bg-9qD" kind="presentation" identifier="showCreateOrEditViewController" id="96U-Om-IWl"/>
@@ -310,6 +334,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yhs-ek-dcv">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.57137769630000002" blue="0.51813914539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                     </navigationBar>
                     <connections>
                         <segue destination="azr-rf-wpQ" kind="relationship" relationship="rootViewController" id="bdi-ac-TWr"/>
@@ -320,4 +346,13 @@
             <point key="canvasLocation" x="-548" y="367"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="ColorAnswerButton">
+            <color red="0.25490196078431371" green="0.85882352941176465" blue="0.0" alpha="0.86400002241134644" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorNavigationQuestionListBackground">
+            <color red="0.55686274509803924" green="0.92156862745098034" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

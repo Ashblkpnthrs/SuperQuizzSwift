@@ -49,17 +49,15 @@ class CreateOrEditQuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         if let question = questionToEdit{
-             questionTitleTextField.text = question.questionTitle
-             answerTextField1.text = question.propositions[0]
-             answerTextField2.text = question.propositions[1]
-             answerTextField3.text = question.propositions[2]
-             answerTextField4.text = question.propositions[3]
-           
+            questionTitleTextField.text = question.questionTitle
+            answerTextField1.text = question.propositions[0]
+            answerTextField2.text = question.propositions[1]
+            answerTextField3.text = question.propositions[2]
+            answerTextField4.text = question.propositions[3]
+            
         }
-       
         
     }
     
@@ -90,11 +88,10 @@ class CreateOrEditQuestionViewController: UIViewController {
             question.propositions.append(answerTextField2.text!)
             question.propositions.append(answerTextField3.text!)
             question.propositions.append(answerTextField4.text!)
-            
-            
             delegate?.userDidEditQuestion(q: question)
+            
         } else {
-            //TODO creer une nouvelle question
+            
             let question = Question(questionTitle:"", correctAnswer: correctAnswer ?? "" )
             question.questionTitle = questionTitleTextField.text!
             question.propositions = [answerTextField1.text, answerTextField2.text, answerTextField3.text, answerTextField4.text] as! [String]
@@ -105,14 +102,4 @@ class CreateOrEditQuestionViewController: UIViewController {
     @IBAction func createQuestionButton(_ sender: UIButton) {
         createOrEditQuestion()
     }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
